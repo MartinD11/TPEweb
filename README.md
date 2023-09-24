@@ -10,7 +10,7 @@ TEMATICA:
 Ecommerce
 
 DESCRIPCION:
-es un sitio web ideado para la venta de diferentes productos como por ejemplo un mercadolibre o amazon.
+es un sitio web ideado para la venta de diferentes productos como por ejemplo un Mercadolibre o Amazon.
 
 IMAGEN DEL DER(DIAGRAMA DE ENTIDAD RELACION)
 
