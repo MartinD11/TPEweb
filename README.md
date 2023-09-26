@@ -10,7 +10,7 @@ TEMATICA:
 Ecommerce
 
 DESCRIPCION:
-es un sitio web ideado para la venta de diferentes productos como por ejemplo un Mercadolibre o Amazon.
+sitio web ideado para la venta de diferentes productos relacionado con el ambito del armado de pc y venta de componentes, como por ejemplo CompraGamer o ese estilo de pagina web.
 
 IMAGEN DEL DER(DIAGRAMA DE ENTIDAD RELACION)
 
