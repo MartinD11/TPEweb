@@ -1,0 +1,31 @@
+<?php require 'templates/header.phtml';?>
+<h3 >CONTROL DE INVENTARIO</h3>
+<?php require 'templates/formAltaCategoria.phtml'?>
+<div class="row gx-5">
+    <div class="col">
+     <div class="p-3"><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover lead" href="inventarioCategorias">categorias</a></div>
+    </div>
+    <div class="col">
+     <div class="p-3"><a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover lead" href="inventario">productos</a></div>
+    </div>
+</div>
+<table  class="table table-dark table-striped tableee"  >
+    <thead>
+        <tr>
+            <th>Categoria</th>
+            <th>Gama</th>
+            <th>acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($categories as $category) :?>
+        <tr>
+            <td><?=$category->Categoria ?></td>
+            <td><?=$category->Gama ?></td>
+            <td><a href="eliminarCategoria/<?= $category->id_categorias?>" class="btn btn-danger">eliminar</a><a class="btn btn-outline-warning" href="editarFormCategoria/<?= $category->id_categorias?>">editar</a></td>
+        </tr>
+        <?php endforeach?>
+    </tbody>
+</table>
+
+<?php require 'templates/footer.phtml';?>

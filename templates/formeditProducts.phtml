@@ -1,0 +1,48 @@
+<?php require 'templates/header.phtml'?>
+
+<form action="editarProducto/<?=$id?>" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="producto" class="form-label">Ingresar Nuevo Producto</label>
+    <input type="text" class="form-control" id="prodcuto" aria-describedby="emailHelp" name="producto">
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Categoría</label>
+    <select name="categoria" id="" class="form-select form-select-sm" aria-label="Small select example">
+      <?php foreach($categories as $category) :?>
+        <option value="<?=$category->id_categorias?>"><?=$category->Categoria?></option>
+        <?php endforeach?>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Precio</label>
+    <input type="number" class="form-control" id="precio" name="precio">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Descripción</label>
+    <input type="text" class="form-control" id="descripcion" name="descripcion">
+  </div>
+
+  <div class="mb-3">
+  <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="activo">
+  <label class="form-check-label" for="flexCheckDefault">
+    Stock
+  </label>
+    </div>
+    
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Marcas</label>
+    <input type="text" class="form-control" id="marcas" name="marcas">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Imagen</label>
+    <input type="file" class="form-control" id="imagen" name="imagen">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<?php require 'templates/footer.phtml'?>

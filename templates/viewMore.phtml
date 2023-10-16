@@ -1,0 +1,36 @@
+<?php require 'templates/header.phtml';?>
+<div class="">
+    <div class="">
+            <?php foreach($productById as $Product):?>   
+            <img src="<?=$Product->Imagen?>" >
+    </div>
+        <div>
+            <dt>Producto</dt>
+            <dd><?=$Product->Producto?></dd>
+            <dt >Precio</dt>
+            <dd><?=$Product->Precio?></dd>
+            <dt>Stock</dt>
+            <?php if($Product->Stock):?>
+            <dd>En Stock</dd>
+            <?php else:?>
+            <dd>Sin Stock</dd>
+            <?php endif?>
+
+            
+            
+            <dt>Categoria</dt>
+            <dd>
+              <p><?=$Product->Categoria?></p>
+            </dd>
+            <dt>Descripcion</dt>
+            <dd><?=$Product->Descripcion?></dd>
+            <dt >Marca</dt>
+            <dd><?=$Product->Marcas?></dd>
+            <dt >Gama</dt>
+            <dd><?=$Product->Gama?></dd>
+        </div>
+
+            <?php endforeach ?>
+</div>            
+                   
+<?php require 'templates/footer.phtml';?>
