@@ -1,3 +1,3 @@
 El nombre de usuario para acceder al inventario es admin y de password tambien
 
-LEER EL README QUE HAY UNA ACLARACION IMPORTANTE A TENER EN CUENTA!!!
+
