@@ -1,0 +1,1 @@
+El nombre de usuario para acceder al inventario es admin y de password tambien
