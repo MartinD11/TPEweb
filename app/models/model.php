@@ -11,7 +11,7 @@ class Model {
     function deploy(){
         $query = $this->db->query('SHOW TABLES');
         $tables = $query->fetchAll(); //devuelve las tablas de la db
-
+        $aux= '$n0D';
         if(count($tables)==0){
             $sql =<<<END
             
@@ -79,7 +79,7 @@ class Model {
                     --
 
                     INSERT INTO `usuarios` (`id_usuario`, `User`, `Password`) VALUES
-                    (1, 'admin', '$2y$10$n0D.dUcjJaSZYCkdniqt9.BdoUosl72UOKjs.r23bkqaB9kI2QMzy');
+                    (1, 'admin', '$2y$10$aux.dUcjJaSZYCkdniqt9.BdoUosl72UOKjs.r23bkqaB9kI2QMzy');
 
                     --
                     -- Indexes for dumped tables
