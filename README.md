@@ -14,7 +14,7 @@ sitio web ideado para la venta de diferentes productos relacionado con el ambito
 
 ACLARACION IMPORTANTE SOBRE EL DEPLOY DE LAS TABLAS:
 
-en el archivo model.php que es donde se crean las tablas si estan no existen, tenemos un problema en la parte de la tabla usuarios en la columna password donde aparece la contraseña hasheada y por lo tanto al crearse las tablas, es necesario ir a la base de datos y editar esa columna poner la contraseña que aparece en el visual y que vamos a dejar a manoe n este archivo de texto, ya que como vas a ver en la screen que voy a subir a este archivo, no sabemos por que toma una parte de la contraseña como una variable php y no encontramos forma de solucionarlo y dado ese problema, la contraseña se crea incompleta y por lo tanto no funcionaria el iniciar sesion a menos que se edite la columna password de la tabla usuarios.
+en el archivo model.php que es donde se crean las tablas si estan no existen, tenemos un problema en la parte de la tabla usuarios en la columna password donde aparece la contraseña hasheada y por lo tanto al crearse las tablas, es necesario ir a la base de datos y editar esa columna poner la contraseña que aparece en el visual y que vamos a dejar a mano en este archivo de texto, ya que como vas a ver en la screen que subiremos en este archivo, no sabemos por que toma una parte de la contraseña como una variable php y no encontramos forma de solucionarlo y dado ese problema, la contraseña se crea incompleta y por lo tanto no funcionaria el iniciar sesion a menos que se edite la columna password de la tabla usuarios.
 
 adjunto foto a continuacion->
 
