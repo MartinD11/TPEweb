@@ -68,11 +68,7 @@ switch ($params[0]) {
             break;
     case 'verMas':
         $ProductControler->getProductById($params[1]);
-        break;  
-    case 'GamaMedia'://modificar por categoria
-            break;  
-    case 'GamaBaja'://modificar por categoria
-         break;                                 
+        break;                                  
     default: 
         $ProductControler->showError($error=null);
         break;

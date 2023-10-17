@@ -22,9 +22,6 @@ require_once './app/views/productView.php';
         $this->View->showProducts($products,$categories);
     }
 
-    public function showCategories(){
-        //logica para mostrar las categorias
-    }
 
     public function showInventory(){
         AuthHelper::verify();
