@@ -60,4 +60,8 @@ require_once './app/views/productView.php';
         $this->View->showProductDetails($productById);
 
     }
+
+    public function showError($error){
+        $this->View->showError($error);
+    }
 }

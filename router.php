@@ -74,7 +74,7 @@ switch ($params[0]) {
     case 'GamaBaja'://modificar por categoria
          break;                                 
     default: 
-        echo "404 Page Not Found";
+        $ProductControler->showError($error=null);
         break;
 }
 
